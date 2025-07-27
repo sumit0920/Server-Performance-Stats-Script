@@ -4,6 +4,10 @@ A powerful and portable Bash script to monitor essential server performance stat
 
 ---
 
+### 🔗 Project URL
+```
+https://roadmap.sh/projects/server-stats
+```
 ## 📌 Features
 
 - ✅ Total CPU usage (User, System, Idle)
