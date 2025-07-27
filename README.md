@@ -83,6 +83,25 @@ Used: 8.1G / Total: 25G (34% used)
 ✅ Script execution completed!
 
 ```
+### Summary Table
+
+```
+
+| Section              | Command Used              | Purpose                        |
+| -------------------- | ------------------------- | ------------------------------ |
+| OS Info              | uname -a                  | System version, kernel         |
+| Uptime               | uptime -p                 | Human-readable uptime          |
+| Load Average         | uptime, awk               | Load average for 1,5,15 mins   |
+| Logged In Users      | who                       | List current users             |
+| CPU Usage            | top -bn1, awk             | Show %CPU used by system, user |
+| Memory Usage         | free -m, awk              | Show memory in MB and usage %  |
+| Disk Usage           | df -h --total, awk`       | Show total disk used/free      |
+| Top CPU Processes    | ps, sort, head            | Show top 5 CPU-intensive       |
+| Top Memory Processes | ps, sort, head            | Show top 5 RAM-intensive       |
+| Failed Logins (24h)  | journalctl, grep, wc -l   | Count SSH failures             |
+
+
+```
 ### 📂 File Structure
 ```
 server-stats/
